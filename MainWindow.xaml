@@ -1,0 +1,16 @@
+﻿<Window x:Class="StackDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Stack Demo" Height="340" Width="385" ResizeMode="CanMinimize" Loaded="Window_Loaded" Name="mainWindow" Icon="/StackDemo;component/Images/Data_stack_final.ico">
+    <Grid Name="myGrid">
+        <Border BorderBrush="Silver" BorderThickness="1" Height="238" HorizontalAlignment="Left" Margin="22,50,0,0" Name="conBorder" VerticalAlignment="Top" Width="217" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="44,84,0,0" Name="ioTb" VerticalAlignment="Top" Width="75" MaxLength="5" />
+        <Button Content="Push" Height="23" HorizontalAlignment="Left" Margin="44,140,0,0" Name="pushBtn" VerticalAlignment="Top" Width="75" Click="pushBtn_Click" />
+        <Button Content="Pop" Height="23" HorizontalAlignment="Left" Margin="143,140,0,0" Name="popBtn" VerticalAlignment="Top" Width="75" Click="popBtn_Click" />
+        <Button Content="Top" Height="23" HorizontalAlignment="Left" Margin="143,84,0,0" Name="topBtn" VerticalAlignment="Top" Width="75" Click="topBtn_Click" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="47,200,0,0" Name="statusLine" Text="Idle" VerticalAlignment="Top" />
+        <Button Content="About" Height="23" HorizontalAlignment="Left" Margin="44,243,0,0" Name="aboutBtn" VerticalAlignment="Top" Width="75" Click="aboutBtn_Click" />
+        <Border BorderBrush="#FF99A1AD" BorderThickness="5" Height="279" HorizontalAlignment="Left" Margin="258,9,0,0" Name="stackBorder" VerticalAlignment="Top" Width="89" CornerRadius="10"></Border>
+        <Label Content="Stack" Height="28" Name="stackLabel" Margin="284,280,0,-7" />
+    </Grid> 
+</Window>
